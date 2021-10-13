@@ -12,10 +12,10 @@
     <aside><h1>COMPANY</h1></aside>
     <div class="topnav">
         <ul>
-            <li>ABOUT US</li>
-            <li>GALLERY</li>
-            <li>CORPORATE ENQUIRY</li>
-            <li>CONTACT US</li>
+            <li><a onclick="aboutUsFunction()">ABOUT US</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">CORPORATE ENQUIRY</a></li>
+            <li><a href="#">CONTACT US</a></li>
         </ul>
     </div>
 </header>
@@ -23,10 +23,10 @@
     <article class="mainNavbar">
         <a class="annivesary">35 <sup>th</sup> ANNIVERSARY </a>
         <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">PRODUCTS
+            <button class="dropbtn">PRODUCTS
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content" >
+            <div class="dropdown-content">
                 <div class="row">
                     <div class="column">
                         <a href="#">Air Conditioners</a>
@@ -108,6 +108,7 @@
         <a>STORE LOCATOR</a>
 
     </article>
+
     <section id="slideshowSection">
         <div class="slideshow-container">
 
@@ -168,6 +169,36 @@
 
     </section>
 
+    <section class="aboutUs row" id="aboutUs">
+        <div class="imageHolder column">
+            <img src="assets/otherImages/Comfortable-Home.jpg">
+        </div>
+        <aside class="aboutUsContent column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta hic, id laudantium mollitia natus
+                reiciendis rem voluptates. Aliquam culpa distinctio eos esse fugit, impedit laboriosam optio
+                perspiciatis reiciendis sed! Tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                hic, id laudantium mollitia natus
+                reiciendis rem voluptates. Aliquam culpa distinctio eos esse fugit, impedit laboriosam optio
+                perspiciatis reiciendis sed! Tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                hic, id laudantium mollitia natus
+                reiciendis rem voluptates. <br><br> Aliquam culpa distinctio eos esse fugit, impedit laboriosam optio
+                perspiciatis reiciendis sed! Tempore.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dicta hic, id laudantium mollitia natus
+                reiciendis rem voluptates.</p>
+
+        </aside>
+    </section>
+
+    <section class="contactUs row" id="contactUs" >
+        <div class="messageArea column" id="messageArea"></div>
+        <div class="contactDetails column"></div>
+    </section>
+
+
+    <script>
+        document.getElementById("slideshowSection").style.display = "none";
+        document.getElementById("aboutUs").style.display = "none";
+    </script>
 
 </main>
 <footer>
