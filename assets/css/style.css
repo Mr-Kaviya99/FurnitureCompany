@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+header {
+    height: 5%;
+    top: 0;
+    position: relative;
+}
+
+header > aside {
+    background: black;
+    color: azure;
+    width: 200px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+}
+
+header > aside > h1 {
+    font-size: 1.5em;
+    margin: 0px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.topnav {
+    position: relative;
+    left: 50%;
+    width: max-content;
+}
+
+.topnav > ul {
+    font-size: 1em;
+    list-style: none;
+}
+
+.topnav > ul > li {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+main {
+    border-top: 5pc;
+    height: 50px;
+}
+
+.mainNavbar {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+}
+
+.mainNavbar a {
+    float: left;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainNavbar a:nth-child(1) {
+    margin-left: 8%;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.mainNavbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #ff0000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    background-color: #1b1c32;
+    color: white;
+}
+
+
+#customerCare>img{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    position: relative;
+    left: 10%;
+    top: 38px;
+}
+
+#customerCare>p{
+    left: 214px;
+    position: fixed;
+}
+
+#email>img{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    position: relative;
+    left: 35%;
+    top: 10px;
+}
+
+#email>p{
+    left: 590px;
+    position: fixed;
+    display: inline-block;
+}
+
+.mySlides {
+    display: none
+}
+
+.mySlides > img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

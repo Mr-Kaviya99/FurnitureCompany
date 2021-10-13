@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Furniture Company</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <aside><h1>COMPANY</h1></aside>
+    <div class="topnav">
+        <ul>
+            <li>ABOUT US</li>
+            <li>GALLERY</li>
+            <li>CORPORATE ENQUIRY</li>
+            <li>CONTACT US</li>
+        </ul>
+    </div>
+</header>
+<main>
+    <article class="mainNavbar">
+            <a>35 <sup>th</sup> ANNIVERSARY </a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">PRODUCTS
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Air Conditioners</a>
+                    <a href="#">Beds</a>
+                    <a href="#">Bedroom Suits</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="">LIVING ROOM
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="">BED ROOM
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="">DINING
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="">OFFICE FURNITURE
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="">PLASTIC PRODUCTS
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="">APPLIANCES
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <a>STORE LOCATOR</a>
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                window.onclick = function (e) {
+                    if (!e.target.matches('.dropbtn')) {
+                        var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            </script>
+    </article>
+    <section>
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/slideshowImages/suite_dining_collection.jpg" style="width:100%; height:400px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/slideshowImages/kairos_kollektion.jpg" style="width:100%; height:400px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/slideshowImages/top-10-furniture-brands.jpg" style="width:100%; height:400px">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+
+    </section>
+
+</main>
+<footer>
+    <aside id="customerCare">
+        <img src="assets/icon/phone_100px.png" >
+          <p>Customer Care : 0123 456 789</p>
+    </aside>
+    <aside id="email">
+        <img src="assets/icon/secured_letter_100px.png" >
+        <p>Company@info.lk</p>
+    </aside>
+</footer>
+</body>
+</html>
