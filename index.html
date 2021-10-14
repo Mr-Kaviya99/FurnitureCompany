@@ -12,10 +12,10 @@
     <aside><h1>COMPANY</h1></aside>
     <div class="topnav">
         <ul>
-            <li><a onclick="aboutUsFunction()">ABOUT US</a></li>
+            <li><a href="#" id="aboutUsButton">ABOUT US</a></li>
             <li><a href="#">GALLERY</a></li>
             <li><a href="#">CORPORATE ENQUIRY</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#" id="contactUsButton">CONTACT US</a></li>
         </ul>
     </div>
 </header>
@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="column">
                         <a href="#">Air Conditioners</a>
-                        <a href="#">Beds</a>
+                        <a id="bedsButton">Beds</a>
                         <a href="#">Bedroom Suits</a>
                         <a href="#">Bed Sheets & Pillows</a>
                         <a href="#">Blenders & Mixtures</a>
@@ -229,10 +229,60 @@
 
     </section>
 
+    <section class="beds row" id="beds">
+        <div class="regentBedItem column">
+            <img src="assets/beds/regentbed.jpg" id="regentBedDetails"><br><br>
+            <label class="bedName">REGENT BED</label><br><br>
+            <label class="bedPrice">Rs. 30,257</label>
+        </div>
+        <div class="FelliciaStorageBedItem column">
+            <img src="assets/beds/Felicia.jpg" ><br><br>
+            <label class="bedName">FELICIA STORAGE BED</label><br><br>
+            <label class="bedPrice">Rs. 88,875</label>
+        </div>
+        <div class="ivoryBedItem column">
+            <img src="assets/beds/Ivory.jpg" ><br><br>
+            <label class="bedName">IVORY BED</label><br><br>
+            <label class="bedPrice">Rs. 209,975</label>
+        </div>
+    </section>
+
 
     <script>
-        document.getElementById("slideshowSection").style.display = "none";
-        document.getElementById("aboutUs").style.display = "none";
+
+        var slideShow = document.getElementById('slideshowSection');
+        var aboutUs = document.getElementById('aboutUs');
+        var contactUs = document.getElementById('contactUs');
+        var beds = document.getElementById('beds');
+
+        aboutUs.style.display = "none";
+        contactUs.style.display = "none";
+        beds.style.display = "none";
+
+        aboutUsButton.addEventListener('click', function () {
+            slideShow.style.display = "none";
+            contactUs.style.display = "none";
+            beds.style.display = "none";
+
+            aboutUs.style.display = "block";
+        });
+
+        contactUsButton.addEventListener('click', function () {
+            slideShow.style.display = "none";
+            aboutUs.style.display = "none";
+            beds.style.display = "none";
+
+            contactUs.style.display = "block";
+        });
+
+        bedsButton.addEventListener('click', function () {
+            slideShow.style.display = "none";
+            aboutUs.style.display = "none";
+            contactUs.style.display = "none";
+
+            beds.style.display = "block";
+        });
+
     </script>
 
 </main>
@@ -246,5 +296,8 @@
         <p>Company@info.lk</p>
     </aside>
 </footer>
+
+
+
 </body>
 </html>
