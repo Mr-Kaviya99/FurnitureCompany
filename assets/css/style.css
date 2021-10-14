@@ -326,16 +326,55 @@ footer {
     margin-top: 6%;
 }
 
-.column{
+.aboutUs.column{
     width: 50%;
     background-color: white;
 }
 
+.txtmessage{
+    height: 50px;
+}
 
+.contactUs .column{
+    width: auto;
+    background-color: white;
+}
 
+.messageArea{
+    margin-left: 20%;
+    margin-top: 5%;
+}
 
+.contactUs .contactDetails{
+    width: 50%;
+    background-color: white;
+}
 
+.contactDetails .column{
+    width: 33.33%;
+    background-color: white;
+}
 
+.contactDetails img{
+    width: 25px;
+    height: 25px;
+}
+
+.contactDetails label {
+    vertical-align: super;
+    margin-left: 10%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 600px;
+}
+
+.mapouter iframe {
+    border:0;
+}
 
 
 
