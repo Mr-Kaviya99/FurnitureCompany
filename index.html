@@ -231,22 +231,41 @@
 
     <section class="beds row" id="beds">
         <div class="regentBedItem column">
-            <img src="assets/beds/regentbed.jpg" id="regentBedDetails"><br><br>
-            <label class="bedName">REGENT BED</label><br><br>
-            <label class="bedPrice">Rs. 30,257</label>
+            <img src="assets/beds/regentbed.jpg" id="regentBedDetails"><br>
+            <h5 class="bedName">REGENT BED</h5><br>
+            <h2 class="bedPrice">Rs. 30,257</h2>
         </div>
         <div class="FelliciaStorageBedItem column">
-            <img src="assets/beds/Felicia.jpg" ><br><br>
-            <label class="bedName">FELICIA STORAGE BED</label><br><br>
-            <label class="bedPrice">Rs. 88,875</label>
+            <img src="assets/beds/Felicia.jpg" ><br>
+            <h5 class="bedName">FELICIA STORAGE BED</h5><br>
+            <h2 class="bedPrice">Rs. 88,875</h2>
         </div>
         <div class="ivoryBedItem column">
-            <img src="assets/beds/Ivory.jpg" ><br><br>
-            <label class="bedName">IVORY BED</label><br><br>
-            <label class="bedPrice">Rs. 209,975</label>
+            <img src="assets/beds/Ivory.jpg" ><br>
+            <h5 class="bedName">IVORY BED</h5><br>
+            <h2 class="bedPrice">Rs. 209,975</h2>
         </div>
     </section>
 
+    <section class="regentBed row" id="regentBed">
+        <div class="imageHolder column">
+            <img src="assets/beds/regentbed.jpg">
+        </div>
+        <aside class="regentBedContent column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta hic, id laudantium mollitia natus
+                reiciendis rem voluptates. Aliquam culpa distinctio eos esse fugit, impedit laboriosam optio
+                perspiciatis reiciendis sed! Tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                hic, id laudantium mollitia natus
+                reiciendis rem voluptates. Aliquam culpa distinctio eos esse fugit, impedit laboriosam optio
+                perspiciatis reiciendis sed! Tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                hic, id laudantium mollitia natus
+                reiciendis rem voluptates. <br><br> Aliquam culpa distinctio eos esse fugit, impedit laboriosam optio
+                perspiciatis reiciendis sed! Tempore.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dicta hic, id laudantium mollitia natus
+                reiciendis rem voluptates.</p>
+
+        </aside>
+    </section>
 
     <script>
 
@@ -254,15 +273,18 @@
         var aboutUs = document.getElementById('aboutUs');
         var contactUs = document.getElementById('contactUs');
         var beds = document.getElementById('beds');
+        var regentBed = document.getElementById('regentBed');
 
         aboutUs.style.display = "none";
         contactUs.style.display = "none";
         beds.style.display = "none";
+        regentBed.style.display = "none";
 
         aboutUsButton.addEventListener('click', function () {
             slideShow.style.display = "none";
             contactUs.style.display = "none";
             beds.style.display = "none";
+            regentBed.style.display = "none";
 
             aboutUs.style.display = "block";
         });
@@ -271,6 +293,7 @@
             slideShow.style.display = "none";
             aboutUs.style.display = "none";
             beds.style.display = "none";
+            regentBed.style.display = "none";
 
             contactUs.style.display = "block";
         });
@@ -279,10 +302,19 @@
             slideShow.style.display = "none";
             aboutUs.style.display = "none";
             contactUs.style.display = "none";
+            regentBed.style.display = "none";
 
             beds.style.display = "block";
         });
 
+        regentBedDetails.addEventListener('click', function () {
+            slideShow.style.display = "none";
+            aboutUs.style.display = "none";
+            contactUs.style.display = "none";
+            beds.style.display = "none";
+
+            regentBed.style.display = "block";
+        });
     </script>
 
 </main>

@@ -306,9 +306,6 @@ footer {
     margin: 3.84%;
 }
 
-.imageHolder{
-
-}
 
 .aboutUs .imageHolder img{
     height: 275px;
@@ -385,6 +382,7 @@ footer {
 }
 
 .beds .column{
+    margin-top: 5%;
     background-color: white;
     width: 33.33%;
 }
@@ -393,14 +391,42 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
 }
 
-.beds div label {
+.beds div h5,h2 {
+    text-align: center;
+}
 
+.beds div h2 {
+    color: dodgerblue;
+}
+
+.regentBed{
+    margin: 3.84%;
 }
 
 
+.regentBed .imageHolder img{
+    height: 275px;
+    margin-left: 25%;
+    margin-top: 7%;
+    border: 1px solid black;
+}
+
+.regentBedContent{
+    height: 50%;
+}
+
+.regentBedContent p {
+    width: 70%;
+    margin-top: 6%;
+}
+
+.regentBed .column{
+    width: 50%;
+    background-color: white;
+}
 
 
 
