@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <aside><h1>COMPANY</h1></aside>
+    <aside><h1><a href="#" id="defaultSlidePage"> COMPANY</a></h1></aside>
     <div class="topnav">
         <ul>
             <li><a href="#" id="aboutUsButton">ABOUT US</a></li>
@@ -314,6 +314,15 @@
             beds.style.display = "none";
 
             regentBed.style.display = "block";
+        });
+
+        defaultSlidePage.addEventListener('click', function () {
+            aboutUs.style.display = "none";
+            contactUs.style.display = "none";
+            beds.style.display = "none";
+            regentBed.style.display = "none";
+
+            slideShow.style.display = "block";
         });
     </script>
 

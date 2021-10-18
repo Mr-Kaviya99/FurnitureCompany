@@ -15,7 +15,6 @@ header {
 
 header > aside {
     background: black;
-    color: azure;
     width: 200px;
     height: 60px;
     border-radius: 50%;
@@ -26,8 +25,14 @@ header > aside {
 header > aside > h1 {
     font-size: 1.5em;
     margin: 0px;
-    padding-top: 15px;
+}
+
+header > aside > h1 > a {
+    float: left;
+    color: bisque;
     text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
 }
 
 .topnav {
