@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<h1> Admin</h1>
+
+
+<h2> Category</h2>
+<form>
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group">
+                <label><strong>Category Id</strong></label>
+                <input
+                        id="adminCgId"
+                        class="form-control"
+                        type="text"
+                        placeholder="CG***"
+                        name="adminCgId"
+                        value="CG001"
+                >
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="form-group">
+                <label><strong>Category Name</strong></label>
+                <input
+                        id="adminCgName"
+                        class="form-control"
+                        type="text"
+                        value="Category Name"
+                        placeholder="Category Name"
+                        name="adminCgName">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group mb-2">
+        <button id="btnCgSave" class="btn  btn-sm" type="button">Save
+        </button>
+        <button id="btnCgUpdate" class="btn  btn-sm" type="button">
+            Update
+        </button>
+        <button id="btnCgDelete" class="btn  btn-sm" type="button">
+            Delete
+        </button>
+        <button id="btnCgGetAll" class="btn  btn-sm" type="button">
+            Get All
+        </button>
+    </div>
+
+    <div class="table-box" style="height: 250px; overflow: no-display">
+        <div class="table-responsive-lg">
+            <table class="table table-hover">
+                <thead class="text-dark" id="tblAdminCategory">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                </tr>
+                </thead>
+                <tbody id="tblAdminCategoryBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</form>
+
+<script src="../js/mainFuntion.js"></script>
+<script src="../js/jquery.min.js"></script>
+</body>
+</html>
