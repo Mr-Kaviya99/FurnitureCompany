@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Admin.css">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="navbar  align-items-start sidebar accordion p-0" id="slide-view">
+        <div class="container-fluid d-flex flex-column p-0">
+            <div class="m-0 p-0">
+                <img style="top: 20px;position: relative" id="admin_logo" src="../assets/icon/logo.png">
+            </div>
+            <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0 p-0" href="Admin.html">
+                <div class="sidebar-brand-text" style="position: relative; bottom: 10px; font-size: 0.9rem; text-decoration: none; color: white"> Furniture Company
+                </div>
+            </a>
+            <div style="background-color: transparent; position: absolute; top: 165px; width: 220px; height: 2px;"></div>
+            <ul class="nav navbar-nav mt-5">
+                <li class="nav-item">
+                    <a class="text-white nav-link" id="btn_mainPage" style="cursor: pointer">Dashboard</a>
+                    <img style="position:absolute; top: 7px; left: 125px; width: 30px; height: 30px;" src="../assets/icon/das.png">
+                </li>
+                <li class="nav-item">
+                    <a class="text-white nav-link" id="btn-category" style="cursor: pointer">Category</a>
+                    <img style="position:absolute; top: 7px; left: 125px; width: 30px; height: 30px;" src="../assets/icon/cat.png">
+                </li>
+                <li class="nav-item">
+                    <a class="text-white nav-link" id="btn-product" style="cursor: pointer">Product</a>
+                    <img style="position:absolute; top: 7px; left: 125px; width: 30px; height: 30px;" src="../assets/icon/pr.png">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="d-flex flex-column bg-light" id="content-wrapper">
+        <div id="content" class="m-0 p-0">
+            <nav class="navbar navbar-light navbar-expand bg-white shadow topbar static-top">
+                <div class="container-fluid">
+                    <button class="btn btn-link d-md-none rounded-circle mr-3" type="button"></button>
+                    <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                            <div class="input-group-append">
+                                <button class="btn py-0" type="button"><img src="../assets/icon/sear.png">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="nav-item dropdown no-arrow">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">
+                            <span class="d-none d-lg-inline mr-2 text-gray-600 small" style="font-size: 1rem">Kavindu Hashintha</span>
+                            <img class="rounded-circle img-profile" src="../assets/icon/male.png"></a>
+                        <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
+                            <a class="dropdown-item" role="presentation" style="cursor: pointer" id="btnAdminProfile">Profile</a>
+                            <div class="dropdown-divider">
+                            </div>
+                            <a class="dropdown-item" href="../index.html" role="presentation" style="cursor: pointer"
+                               id="btnAdminLogout">Logout</a></div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="main-panel bg-light m-0 p-0 ">
+
+            <div style="display: block" id="dashboard-page">
+                <div class="container-fluid">
+                    <div class="row mt-4">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-left-warning py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col mr-2">
+                                            <div class="text-uppercase text-warning font-weight-bold text-xs mb-1">
+                                                <span>Category</span>
+                                            </div>
+                                            <div class="text-dark font-weight-bold h5 mb-0"><span id="txtCategoryCount">0</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><img id="custom_pic" src="../assets/icon/category.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-left-warning py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col mr-2">
+                                            <div class="text-uppercase text-warning font-weight-bold text-xs mb-1">
+                                                <span>Product</span>
+                                            </div>
+                                            <div class="text-dark font-weight-bold h5 mb-0"><span
+                                                    id="txtProductCount">0</span></div>
+                                        </div>
+                                        <div class="col-auto"><img id="car_pic"
+                                                                   src="../assets/icon/product.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="adminHomePageSection">
+                        <div class="row">
+                            <div class="col-lg-7 col-xl-12">
+                                <div class="card shadow mb-4">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h6 class="text-primary font-weight-bold m-0">Overview</h6>
+                                        <div class="dropdown no-arrow">
+                                            <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown"
+                                                    aria-expanded="false" type="button">
+                                                <i class="fas fa-ellipsis-v text-gray-400"></i>
+                                            </button>
+                                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
+                                                 role="menu">
+                                                <p class="text-center dropdown-header">dropdown header:</p>
+                                                <a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a>
+                                                <a class="dropdown-item" role="presentation" href="#">&nbsp;Another
+                                                    action</a>
+                                                <div class="dropdown-divider">
+                                                </div>
+                                                <a class="dropdown-item" role="presentation" href="#">&nbsp;Something
+                                                    else here</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-area mt-3">
+                                            <canvas data-bs-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;]
+                                            ,&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}]}}}"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: none" id="category-page">
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4 mt-4">Category</h3>
+                    <div class="col-lg-12 p-0">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card shadow mb-3">
+                                    <div class="card-header py-3">
+                                        <p class="m-0 font-weight-bold">Category Settings</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form method="post">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label><strong>Category ID</strong></label>
+                                                        <input id="cgId"
+                                                               class="form-control"
+                                                               type="text"
+                                                               placeholder="C###"
+                                                               name="cgId"
+                                                        >
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label><strong>Category Name</strong></label>
+                                                        <input id="cgName"
+                                                               class="form-control"
+                                                               type="text"
+                                                               placeholder="Category Name"
+                                                               name="cgName">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <button id="btnCatSave" class="btn  btn-sm btnSave" type="button">
+                                                    Save
+                                                </button>
+                                                <button id="btnCatUpdate" class="btn  btn-sm btnUpdate" type="button">
+                                                    Update
+                                                </button>
+                                                <button id="btnCatDelete" class="btn  btn-sm btnDelete" type="button">
+                                                    Delete
+                                                </button>
+                                                <button id="btnCatGetAll" class="btn  btn-sm btnGetAll" type="button">
+                                                    Get All
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="table-box" style="height: 250px">
+                        <div class="table-responsive-lg">
+                            <table class="table table-hover">
+                                <thead class="text-white" id="tblCat">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tblCatBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="display: none" id="product-page">
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4 mt-4">Product</h3>
+                    <div class="col-lg-12 p-0">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card shadow mb-3">
+                                    <div class="card-header py-3">
+                                        <p class="m-0 font-weight-bold">Product Settings</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label><strong>ID</strong></label>
+                                                        <input id="productId"
+                                                               class="form-control"
+                                                               type="text"
+                                                               placeholder="P###"
+                                                               name="productId"
+                                                        >
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label><strong>Name</strong></label>
+                                                        <input id="productName"
+                                                               class="form-control"
+                                                               type="text"
+                                                               placeholder="product name"
+                                                               name="productName">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label><strong>Type</strong></label>
+                                                        <input id="productType"
+                                                               class="form-control"
+                                                               type="text"
+                                                               placeholder="product type"
+                                                               name="productType">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label><strong>Description</strong></label>
+                                                        <input id="productDesc"
+                                                               class="form-control"
+                                                               type="text"
+                                                               placeholder="product description"
+                                                               name="productDesc">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label><strong>Unity Price</strong></label>
+                                                        <input id="productUnitprize"
+                                                               class="form-control"
+                                                               type="text"
+                                                               placeholder="product unity price"
+                                                               name="productUnitprize">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label><strong>cgID</strong></label>
+                                                        <input id="cgIDD"
+                                                               class="form-control"
+                                                               type="text"
+                                                               placeholder="Category Id"
+                                                               name="cgIDD">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group mb-2">
+                                                <button id="btnProductSave" class="btn  btn-sm btnSave" type="button">
+                                                    Save
+                                                </button>
+                                                <button id="btnProductUpdate" class="btn  btn-sm btnUpdate"  type="button">
+                                                    Update
+                                                </button>
+                                                <button id="btnProductDelete" class="btn  btn-sm btnDelete" type="button">
+                                                    Delete
+                                                </button>
+                                                <button id="btnProductGetAll" class="btn  btn-sm btnGetAll" type="button">
+                                                    Get All
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="table-box" style="height: 250px; overflow: no-display">
+                        <div class="table-responsive-lg">
+                            <table class="table table-hover">
+                                <thead class="text-white" id="tblProduct">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Unity Price</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tblProductBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/chart.min.js"></script>
+<script src="../js/bs-init.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/admin.js"></script>
+<!--<script src="../js/bootstrap.min.js"></script>-->
+</body>
+</html>

@@ -32,7 +32,7 @@ $('#btnCgSave').click(() => {
 
         $.ajax({
             method: "POST",
-            url: "http://localhost:8081/ABC_Company_with_SpringMVC_war_exploded/api/v1/product",
+            url: "http://localhost:8081/ABC_Company_with_SpringMVC_war_exploded/api/v1/category",
             data: JSON.stringify({
                 "cgId": cgId,
                 "cgName": cgName,

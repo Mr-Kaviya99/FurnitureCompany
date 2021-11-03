@@ -1,0 +1,42 @@
+.main-content{
+    height: 650px;
+    width: 1000px;
+    margin-left: 18%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 3px solid black;*/
+    border-radius: 40px;
+}
+.menu-content{
+    height: 550px;
+    width: 500px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right top, #9965ff, #9163fb, #8862f6, #8060f2, #775eed, #5a72f7, #3883fd, #0092ff, #00b1ff, #00cdff, #00e5fd, #5ffbf1);;
+}
+.title-sign-in{
+    margin-left: 41%;
+    color: white;
+    margin-top: 10%;
+}
+.login-form {
+    margin: 50px;
+}
+.form-group{
+    padding: 5px;
+}
+.text-fields{
+    color: white;
+}
+.btn{
+    margin-left: 35%;
+    margin-top: 7%;
+    width: 130px;
+    color: white;
+}
+.btn:hover{
+    background-color: #00e5fd;
+    color: white;
+    border-color: transparent;
+}

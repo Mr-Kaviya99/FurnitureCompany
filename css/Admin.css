@@ -1,0 +1,56 @@
+#slide-view{
+    background-color: #efb80b;
+}
+/*#category-page{*/
+/*    margin-top: -630px;*/
+/*}*/
+/*#product-page{*/
+/*    margin-top: -630px;*/
+/*}*/
+#tblCat{
+    background-color: #efb80b;
+}
+#tblProduct{
+    background-color: #efb80b;
+}
+.btnSave{
+    border : 2px solid #05bd05;
+    border-radius: 6px;
+}
+.btnSave:hover{
+    background-color: #05bd05;
+    border : 2px solid #05bd05;
+    border-radius: 6px;
+    color: white;
+}
+
+.btnUpdate{
+    border : 2px solid #d7ad02;
+    border-radius: 6px;
+}
+.btnUpdate:hover{
+    background-color: #d7ad02;
+    border : 2px solid #d7ad02;
+    border-radius: 6px;
+    color: white;
+}
+.btnDelete{
+    border : 2px solid #d02727;
+    border-radius: 6px;
+}
+.btnDelete:hover{
+    background-color: #d02727;
+    border : 2px solid #d02727;
+    border-radius: 6px;
+    color: white;
+}
+.btnGetAll{
+    border : 2px solid #00d1ff;
+    border-radius: 6px;
+}
+.btnGetAll:hover {
+    background-color: #00d1ff;
+    border: 2px solid #00d1ff;
+    border-radius: 6px;
+    color: white;
+}
